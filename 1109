@@ -1,0 +1,10 @@
+<!--share-->
+  <input name="amnfood" type="radio" id="amnfood"><label for="amnfood">Uncountable</label>
+  <input name="amnfood" type="radio" id="unamn"><input type="text" name="unamn" id="unamn" pattern=[0-9]{1,}>
+<!--controller-->
+if($request->input('amnfood')== NULL){
+            $amu=$request->input('unamn');
+          } else{
+            $amu='uncountable';
+          }
+      $quantity= $amu ;
